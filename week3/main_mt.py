@@ -45,7 +45,13 @@ def start_back():
 
 
 if __name__ == "__main__":
-    p1 = Process(target=start_front)
-    p2 = Process(target=start_back)
-    p1.start()
-    p2.start()
+    try:
+        # define and start the two processes in parallel
+        p1 = Process(target=start_front)
+        p2 = Process(target=start_back)
+        p1.start()
+        p2.start()
+
+    except KeyboardInterrupt:
+        p1.join()
+        p2.join()
