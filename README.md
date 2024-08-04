@@ -1,4 +1,3 @@
 # Work for UCSD COSMOS <i>Cluster 10 - Robot Inventors</i>
 
-- The `notes/` directory contains subdirectories with my notes sorted by week.
-- Directories starting with '`week`' are the code for our robot for that week.
+The code for each week's robot at UCSD COSMOS Cluster 10 can be found here.
